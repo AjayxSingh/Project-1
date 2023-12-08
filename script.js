@@ -95,11 +95,6 @@ function page1(){
         opacity:0,
         duration:1,
         stagger:0.05,
-        scrollTrigger:{
-            trigger:".page1",
-            scroller:".main",
-            //scrub:true,
-        }
     });
 };
 page1();

@@ -318,6 +318,7 @@ nav h4{
     flex-direction: column;
     align-items: center;
     bottom:15vw;
+    margin-bottom:20vh;
 }
 .meet h4{
     font-size: 2vw;

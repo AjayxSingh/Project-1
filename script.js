@@ -98,6 +98,14 @@ function page1(){
     });
 };
 page1();
+
+document.querySelector('.hover').addEventListener('click',function() {
+    tl.to('.pahe1hidden',{
+        y:0,
+        duration:0.5,
+
+    })
+})
  
 const split = new SplitType(".paragraph");
 tl.from(split.lines, {
@@ -110,7 +118,7 @@ tl.from(split.lines, {
     scrollTrigger:{
         trigger:".page2",
         scroller:".main",
-        scrub:true,
+        scrub:1,
     }
 });
 
@@ -123,11 +131,11 @@ tl.from('.page3-top h2',{
     scrollTrigger:{
         trigger:".page3",
         scroller:".main",
-        scrub:true,
+        scrub:1,
     }
 });
 
-tl.from('.page4heading  h3',{
+tl.from('.page4heading  h3, .page4heading hr',{
     opacity:0,
     y:100,
     duaration:0.5,
@@ -135,7 +143,7 @@ tl.from('.page4heading  h3',{
     scrollTrigger:{
         trigger:'.page4',
         scroller:'.main',
-        scrub:true,
+        scrub:1,
     }
 })
 
@@ -148,9 +156,41 @@ tl.from(split3.lines, {
     scrollTrigger:{
         trigger:".page4",
         scroller:".main",
-        scrub:true,
+        scrub:1,
     }
 });
 
+var swiper = new Swiper(".swiper", {
 
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay:{
+        duration: 2500,
+        disableOnInteraction: true,
+    }
+});
+
+tl.from('.page5images',{
+    opacity:0,
+    duration:0.5,
+    stagger:0.01,
+    scrollTrigger:{
+        trigger:'.page5',
+        scroller:'.main',
+        scrub:1,
+    }
+});
+
+tl.from('.page6heading , .6alpha',{
+    y:50,
+    opacity:0,
+    duration:0.5,
+    stagger:0.01,
+    scrollTrigger:{
+        trigger:'.page5',
+        scroller:'.main',
+        scrub:1,
+    }
+});
 

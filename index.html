@@ -10,10 +10,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css" integrity="sha512-vgK7iuWG4Uq4GJHovntONntOoSduelAYImQTT3f0mvdUcI95qQgSmf4ldDhn/FNl3g/xouqOtsm/NxFqaTnxbA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home | REJOIUCE®️</title>
 </head>
 <body>
@@ -23,18 +21,42 @@
             <h1>0%</h1>
         </div>
 
+        <div class="page1hidden">
+            <div>
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+            </div>
+            <div>
+                <span>
+
+                </span>
+                <span>
+
+                </span>
+            </div>
+        </div>
+
 
         <div class="page1">
 
             <div class="cursor">
                 <h5>Play Reel</h5>
             </div>
+
             <video src="ce7c6c9d-d5f4-4be4-b462-d3d64f8fc0cd.mp4" autoplay loop muted ></video>
+            <!-- <iframe src="https://drive.google.com/file/d/1uxWbjHTIyYwetGbjzSONCVcp7P8JlV-S/preview" allow=" autoplay loop muted"></iframe>  -->
+
             <div class="page1content">
-                <nav class="">
+                <nav class="page1menu">
                     <h3>The Venture Agency.</h3>
-                    <h4>Menu</h4>
+                    <a class="hover" style="color:white ; text-decoration:none">Menu</a>
                 </nav>
+
+               
                 <h1 class="heading">
                     <span class="alpha">r</span>
                     <span class="alpha">e</span>
@@ -74,26 +96,132 @@
                     <h2>See the Work</h2>
                 </div>
                 <div class="page3-bottom-cards">
-                    <div class="box"><img src="https://media.istockphoto.com/id/1331241089/nl/foto/farmer-and-insurance-sales-representative-talking-in-field.jpg?s=612x612&w=0&k=20&c=CAcoQUTcaEnOX5gNNqmrWUZI3SUYpj5lUtnzyq0RakQ=" alt=""><video autoplay loop muted src="./vedios/office_-_80314 (540p).mp4"></video></div>
-                    <div class="box"><img src="https://media.istockphoto.com/id/1435250671/nl/foto/man-driving-car-on-the-country-road-with-sunlight-rear-view.jpg?s=612x612&w=0&k=20&c=uS7oC7hCtIdFmPEuAK6eOA9L2cNqKQlXQU1qsCsy014=" alt=""><video autoplay loop muted src="./vedios/Untitled video - Made with Clipchamp.mp4"></video></div>
-                    <div class="box"><img src="https://media.istockphoto.com/id/1323521551/nl/foto/positive-young-woman-using-the-smartphone-for-video-call.jpg?s=612x612&w=0&k=20&c=kjYxw7gh_Rq6682t5JN6yu56BaGn1JOIuINBKi-MXmY=" alt=""><video autoplay loop muted src="./vedios/work_space_-_3132 (540p).mp4"></video></div>
+                    <div class="box"><img src="https://media.istockphoto.com/id/1331241089/nl/foto/farmer-and-insurance-sales-representative-talking-in-field.jpg?s=612x612&w=0&k=20&c=CAcoQUTcaEnOX5gNNqmrWUZI3SUYpj5lUtnzyq0RakQ=" alt=""><video autoplay loop muted src="office_-_80314 (540p).mp4"></video></div>
+                    <div class="box"><img src="https://media.istockphoto.com/id/1435250671/nl/foto/man-driving-car-on-the-country-road-with-sunlight-rear-view.jpg?s=612x612&w=0&k=20&c=uS7oC7hCtIdFmPEuAK6eOA9L2cNqKQlXQU1qsCsy014=" alt=""><video autoplay loop muted src="Untitled video - Made with Clipchamp.mp4"></video></div>
+                    <div class="box"><img src="https://media.istockphoto.com/id/1323521551/nl/foto/positive-young-woman-using-the-smartphone-for-video-call.jpg?s=612x612&w=0&k=20&c=kjYxw7gh_Rq6682t5JN6yu56BaGn1JOIuINBKi-MXmY=" alt=""><video autoplay loop muted src="work_space_-_3132 (540p).mp4"></video></div>
                 </div>
             </div>
         </div>
 
         <div class="page4">
-            <div class="page4heading">
+            
+                <div class="page4video"><video loop muted autoplay src="./vedios/b_w.mp4"></video></div>
+                <div class="page4content">
+                    <div class="page4heading">
+                        <span>
+                            <h3>We operate on a simple Philosophy:</h3>
+                            <h3>Quality over Quantity</h3>
+                        </span>
+                        <hr>
+                        <div class="page4para"><p class="paragraph2">We partner with 5 clients each year. This allows for intense focus on the transformation and launch of your brand by our very best team, which is the only team we have.</p></div>
+                </div>
+                </div>
+        </div>
+
+
+        <div class="page5">
+
+           <div class="page5imagewrapper">
                 <span>
-                    <h3>We operate on a simple Philosophy:</h3>
-                    <h3>Quality over Quantity</h3>
+                    <h1   h1>Get in touch</h1>
+                    <hr>
                 </span>
-                <hr>
-                <div class="page4para"><p class="paragraph2">We partner with 5 clients each year. This allows for intense focus on the transformation and launch of your brand by our very best team, which is the only team we have.</p></div>
+                <div class="page5images">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://images.unsplash.com/photo-1548516173-3cabfa4607e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1530840197133-665af68f9d71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1428550590922-34c77f716ad4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1459278558918-f94278c0f022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1600543640063-4ad1ea479bf1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                            </div>
+                            <div class="swiper-slide">
+
+                                <img src="https://images.unsplash.com/photo-1548516173-3cabfa4607e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1530840197133-665af68f9d71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1428550590922-34c77f716ad4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1459278558918-f94278c0f022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                                <img src="https://images.unsplash.com/photo-1600543640063-4ad1ea479bf1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8fDA%3D" alt="">
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+        
+            </div>
+            
+            <div class="meet">
+                <h4>We Build Uniquely <i class="ri-corner-right-down-fill"></i></h4>
+                <h1>Meet Your Team </h1>
+            </div>
+
+            <hr class="hrlast">
+
+        <div>
+
+
+        <div class="page6">
+            <div class="page6top">
+               <spann class="span1">
+                <h1>
+                    Relax. We Got You
+                </h1>
+                <button>
+                    Take a Seat
+                </button>
+               </spann>
+                <span>
+                    <div class="page6menu1">
+                        <a href="">Home</a>
+                        <a href="">Work</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                        <a href="">Services</a>
+                    </div>
+                    <div class="page6menu2">
+                        <a href="">X <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="">Linkedin</a>
+                        <a href="">Instagram</a>
+                    </div>
+                </span>
+            </div>
+            <div class="page6middle">
+                <span class="mspan1">
+                    <h3>San Diego—California</h3>
+                    <h3>Paris—France</h3>
+                </span>
+
+                <span class="mspan2">
+                    <h3>ajay@ajay.com</h3>
+                    <h3>Lelagities</h3>
+                </span>
+            </div>
+            <div class="page6bottom">
+                <h1 class="page6heading">
+                    <span class="6alpha">r</span>
+                    <span class="6alpha">e</span>
+                    <span class="6alpha">j</span>
+                    <span class="6alpha">o</span>
+                    <span class="6alpha">u</span>
+                    <span class="6alpha">i</span>
+                    <span class="6alpha">c</span>
+                    <span class="6alpha">e</span>
+                </h1>
             </div>
         </div>
+
+
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
